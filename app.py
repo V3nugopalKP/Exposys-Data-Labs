@@ -17,4 +17,4 @@ marketing = st.number_input("Marketing Spend (Rs)", min_value=0.0, step=1000.0)
 if st.button("Predict Profit"):
     input_data = np.array([[rd_spend, admin, marketing]])
     predicted_profit = model.predict(input_data)[0]
-    st.success(f"💰 Predicted Profit: ${predicted_profit:,.2f}")
+    st.success(f"💰 Predicted Profit: {predicted_profit:,.2f}")
